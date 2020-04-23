@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6440234799547045373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1572176932740345561}
+  - component: {fileID: 7731858753111529403}
+  - component: {fileID: 4471776449026357762}
+  m_Layer: 0
+  m_Name: TestSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1572176932740345561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6440234799547045373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7731858753111529403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6440234799547045373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 357249542bb4a9744b3a8fd1dff8a2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voronoiFoldOut: 0
+  displayVoronoi: 0
+  splineCellCount: 4
+  siteCount: 100
+  gridSize: 1000
+  cellCount: 100
+  edgeCount: 0
+  nodeCount: 0
+--- !u!114 &4471776449026357762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6440234799547045373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f98d4bd310d9e49a8ed40eaef6bc41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _meshToExtrude: {fileID: 4300000, guid: e90ab1d2a5d0eaa448c51d6b2c267c3f, type: 3}
+  curbMesh: {fileID: 4300000, guid: 068525045053b5447814abdd68120701, type: 3}
+  _trackMaterial: {fileID: 2100000, guid: efbf057f148e6754583bd761e02ac1f9, type: 2}
+  _curbMaterial: {fileID: 2100000, guid: 734b7735febfe074c958e738804c0bd9, type: 2}
+  _voronoi: {fileID: 7731858753111529403}
+  _randomSeed: 1
+  _seed: 898516555
+  trackMesh: {fileID: 0}
+  curbsMesh: {fileID: 0}

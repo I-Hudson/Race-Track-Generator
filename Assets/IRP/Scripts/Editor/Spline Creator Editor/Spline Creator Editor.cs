@@ -231,6 +231,11 @@ public class SplineCreatorEditor : Editor
     /// </summary>
     private void VoronoiControls()
     {
+        if (sc.Voronoi == null)
+        {
+            return;
+        }
+
         //Are the control foldedout
         sc.Voronoi.VoronoiFoldOut = EditorGUILayout.Foldout(sc.Voronoi.VoronoiFoldOut,
                                     new GUIContent("Voronoi Controls",

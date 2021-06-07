@@ -97,6 +97,11 @@ public class SplineCreatorEditor : Editor
                                                         "(Not recommended to be changed)"),
                                                           sc.MeshToExtrude, typeof(Mesh), true);
 
+            //Mesh Width Scale
+            sc.MeshWidthScale = EditorGUILayout.FloatField(new GUIContent("Track Mesh Width Scale",
+                                                        "Scale of the width for the track mesh(if 1 then the generated track will be the same width as the MeshToExtrude."),
+                                                          sc.MeshWidthScale);
+
             //Curb mesh
             sc.CurbMesh = (Mesh)EditorGUILayout.ObjectField(new GUIContent("Curb Mesh",
                                                           "This is the curb mesh (Not recommended to be changed)"),

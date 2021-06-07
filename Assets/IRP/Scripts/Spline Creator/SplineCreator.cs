@@ -24,6 +24,9 @@ public class SplineCreator : MonoBehaviour
     public Mesh MeshToExtrude
     { get { return _meshToExtrude; } set { _meshToExtrude = value; } }
 
+    [SerializeField]
+    private float _MeshWidthScale = 1.0f;
+    public float MeshWidthScale { get { return _MeshWidthScale; } set { _MeshWidthScale = value > 0.0f ? value : 1.0f; } }
 
     /*
      * Curb Mesh
@@ -270,7 +273,7 @@ public class SplineCreator : MonoBehaviour
                 //get the forward vector
                 Vector3 fwd = oPoints[i].Rotation * Vector3.forward;
                 //get the position
-                Vector3 pos = oPoints[i].Position + (pTwoDShape.Vertices[j].x * fwd);
+                Vector3 pos = oPoints[i].Position + (pTwoDShape.Vertices[j].x * fwd) * _MeshWidthScale;
                 pos.y = oPoints[i].Position.y + pTwoDShape.Vertices[j].y;
 
                 //add the new vertex to the proMesh.Vertices list
